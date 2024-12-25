@@ -1,0 +1,264 @@
+/**
+ * Public-facing styles for Attribute Login Access
+ */
+
+/* Form Container */
+.attrla-form-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+.attrla-form-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.attrla-form-header h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.attrla-form-description {
+    color: #666666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Form Fields */
+.attrla-form-field {
+    margin-bottom: 1.25rem;
+}
+
+.attrla-form-field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333333;
+}
+
+.attrla-form-field .required {
+    color: #dc3545;
+    margin-left: 0.25rem;
+}
+
+.attrla-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.attrla-input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Password Field */
+.attrla-password-field {
+    position: relative;
+}
+
+.attrla-toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #666666;
+}
+
+.attrla-toggle-password:hover {
+    color: #333333;
+}
+
+/* Password Strength Meter */
+.attrla-password-strength {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 4px;
+}
+
+.attrla-password-strength.very-weak {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.attrla-password-strength.weak {
+    background-color: #ffc107;
+    color: #000000;
+}
+
+.attrla-password-strength.medium {
+    background-color: #fd7e14;
+    color: #ffffff;
+}
+
+.attrla-password-strength.strong {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+/* Form Hints */
+.attrla-form-hint {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+/* Messages */
+.attrla-message {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.attrla-message-success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.attrla-message-error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.attrla-message-info {
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    color: #004085;
+}
+
+.attrla-message-warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+}
+
+/* Submit Button */
+.attrla-form-submit {
+    margin-top: 1.5rem;
+}
+
+.attrla-button {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 4px;
+    transition: all 0.15s ease-in-out;
+    width: 100%;
+}
+
+.attrla-button-primary {
+    color: #ffffff;
+    background-color: #007bff;
+    border: 1px solid #0056b3;
+}
+
+.attrla-button-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.attrla-button-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Links Section */
+.attrla-form-links {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.attrla-form-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.attrla-form-links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Remember Me Checkbox */
+.attrla-remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.attrla-remember-me input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Privacy Policy */
+.attrla-privacy-policy {
+    font-size: 0.875rem;
+    color: #666666;
+}
+
+/* Loading State */
+.attrla-form.is-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.attrla-form.is-loading .attrla-button {
+    position: relative;
+    color: transparent;
+}
+
+.attrla-form.is-loading .attrla-button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-right-color: transparent;
+    animation: attrla-spin 0.75s linear infinite;
+}
+
+@keyframes attrla-spin {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    .attrla-form-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .attrla-button {
+        padding: 0.625rem 1.25rem;
+    }
+}
